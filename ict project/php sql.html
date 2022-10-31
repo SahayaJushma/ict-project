@@ -1,0 +1,565 @@
+<html>
+    <head>
+        <title>PHP and SQL</title>
+    </head>
+    <body>
+        <center><h1>PHP and MySQL</h1></center>
+        <h2>PHP</h2>
+        <ul>
+            <li>Initially known as Personal Home Page
+            </li>
+            <li>Now PHP stands for PHP: Hypertext Preprocessor
+            </li>
+            <li>PHP is a widely-used, open source scripting language
+            </li>
+            <li>PHP is free to download and use
+            </li>
+        </ul>
+        <h2>What is a PHP File?
+        </h2>
+        <ul>
+            <li>PHP files can contain text, HTML, JavaScript code, and PHP code
+            </li>
+            <li>PHP code are executed on the server, and the result is returned to the browser as plain HTML</li>
+            <li>PHP files have a default file extension of ".php"
+            </li>
+        </ul>
+        <h2>What Can PHP Do?
+        </h2>
+        <ul>
+            <li>PHP can generate dynamic page content</li>
+            <li>PHP can create, open, read, write, and close files on the server</li>
+            <li>PHP can collect form data
+            </li>
+            <li>PHP can send and receive cookies
+            </li>
+            <li>PHP can add, delete, modify data in your database
+            </li>
+            <li>PHP can restrict users to access some pages on your website</li>
+            <li>PHP can encrypt data
+            </li>
+</ul>
+<h2>Why PHP?</h2>
+<ul>
+    <li>PHP runs on different platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+    <li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)</li>
+    <li>PHP is free. Download it from the official PHP resource: www.php.net
+    </li>
+    <li>PHP is easy to learn and runs efficiently on the server side
+    </li>
+</ul>
+<h2>Basic PHP Syntax</h2>
+<ul>
+    <li>A PHP script always starts with <?php and ends with ?>
+    </li>
+    <li>We can also start a PHP script with <? and end with ?>.
+    </li>
+    <li><?php<br>
+        // PHP code goes here<br>
+        ?> </li>
+</ul>
+<h2>PHP example
+</h2>
+<p>< html><br>
+    < body><br>
+    <?php<br>
+    echo “Welcome to PHP programming!";<br>
+    ?><br>
+    < /body><br>
+    < /html></p>
+   <h2>Comments in PHP</h2>
+    <ul>
+        <li>we use // to make a one-line comment, or /* and */ to make a comment block</li>
+        <li>< html><br>
+            < body><br>
+            <?php<br>
+            //This is a comment
+            /*
+            This is
+            a comment
+            block
+            */
+            ?>
+            < /body>
+            < /html> 
+            </li>
+    </ul>
+    <h2>PHP Variables</h2>
+    <ul>
+        <li>Rules for PHP variable names:
+        </li>
+        <li>Variables in PHP starts with a $ sign, followed by the name of the variable</li>
+        <li>The variable name must begin with a letter or the underscore character
+        </li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+        </li>
+        <li>A variable name should not contain spaces
+        </li>
+        <li>Variable names are case sensitive (y and Y are two different variables)</li>
+    </ul>
+    <h2>Variables-Example
+    </h2>
+    <p><?php<br>
+        $txt=“welcome to PHP programming!";<br>
+        $x=16;<br>
+        ?> 
+        </p>
+        <h2>The Concatenation Operator</h2>
+        <ul>
+            <li>The concatenation operator (.)  is used to put two string values together
+            </li>
+            <li><?php<br>
+                $txt1="Hai World!";<br>
+                $txt2="What a nice day!";<br>
+                echo $txt1 . " " . $txt2;<br>
+                ?>
+                </li>
+        </ul>
+        <h2>The strlen() function
+        </h2>
+        <p> <?php<br>
+            echo strlen("Hello world!");<br>
+            ?>
+            </p>
+            <h2>The strpos() function</h2>
+            <ul>
+                <li>The strpos() function is used to search for a character/text within a string.</li>
+                <li><?php<br>
+                    echo strpos("Hello world!","world");<br>
+                    ?>
+                    </li>
+            </ul>
+            <h2>The if Statement
+            </h2>
+            <ul>
+                <li><b>Syntax</b>
+                </li>
+                <li>if (condition) code to be executed if condition is true;
+                </li>
+                <li>< html><br>
+                    < body><br>
+                    <?php<br>
+                    $age=29;<br>
+                    if ($d > 18){<br>
+                         echo “you are eligible to vote!";<br>
+                        }<br>
+                    ?><br>
+                    < /body><br>
+                    < /html>
+                    </li>
+            </ul>
+            <h2>The if...else Statement
+            </h2>
+            <ul>
+                <li><b>Syntax</b></li>
+                <li>if (condition)<br>
+                    {<br>
+                    code to be executed if condition is true;<br>
+                    }<br>
+                  else<br>
+                    {<br>
+                    code to be executed if condition is false;<br>
+                    }
+                  </li>
+            </ul>
+            <h2>Example</h2>
+            <p>< html><br>
+                < body><br>
+                <?php<br>
+                $age=29;<br>
+                if ($d > 18){<br>
+                     echo “you are eligible to vote!";<br>
+                    }<br>
+                else<br>
+                  {<br>
+                  echo “you are not eligible to vote!";<br>
+                  }<br>
+                ?><br>
+                < /body><br>
+                < /html>
+                </p>
+                <h2>The if...elseif....else Statement
+                </h2>
+                <p>if (condition)<br>
+                    {<br>
+                    code to be executed if condition is true;<br>
+                    }<br>
+                  elseif (condition)<br>
+                    {<br>
+                    code to be executed if condition is true;<br>
+                    }<br>
+                  else<br>
+                    {<br>
+                    code to be executed if condition is false;<br>
+                    }
+                  </p>
+                  <h2>Example
+                </h2>
+                <p>
+                    < html><br>
+                        < body><br>
+                            <?php<br>
+                            $age=4;<br>
+                            if ($age > 18){<br>
+                                 echo “you are eligible to vote!";<br>
+                                }<br>
+                            else  if (age < 5)<br>
+                              {<br>
+                              echo “you are a small baby! you are not eligible to vote! ";<br>
+                              }<br>
+                            
+                            else <br>
+                              {<br>
+                              echo “you are not eligible to vote!";<br>
+                              }<br>
+                            ?><br>
+                            < /body><br>
+                            < /html>
+
+                </p>
+                <h2>The PHP Switch Statement
+                </h2>
+                <ul>
+                    <li><b>Syntax
+                    </b></li>
+                    <li>switch (n)<br>
+                        {<br>
+                        case label1:<br>
+                          code to be executed if n=label1;<br>
+                          break;<br>
+                        case label2:<br>
+                          code to be executed if n=label2;<br>
+                          break;<br>
+                        default:<br>
+                          code to be executed if n is different from both label1 and label2;<br>
+                        }
+                        </li>
+                </ul>
+                <h2>Example
+                </h2>
+                <p>< html><br>
+                    < body><br>
+                    <?php<br>
+                    $x=1;<br>
+                    switch ($x)<br>
+                    {<br>
+                    case 1:<br>
+                      echo "Number 1";<br>
+                      break;<br>
+                    case 2:<br>
+                      echo "Number 2";<br>
+                      break;<br>
+                    case 3:<br>
+                      echo "Number 3";<br>
+                      break;<br>
+                    default:<br>
+                      echo "No number between 1 and 3";<br>
+                    }<br>
+                    ?><br>
+                    < /body>><br>
+                    < /html>
+                    </p>
+                    <h2>Array
+                    </h2>
+                    <ul>
+                        <li>An array is a special variable, which can store multiple values in one single variable.</li>
+                        <li>There are two methods to create a array<br>
+                            (1) $cars=array("Saab","Volvo","BMW","Toyota");
+                            </li>
+                            <li>(2) $cars[0]="Saab";<br>
+                                $cars[1]="Volvo";<br>
+                              $cars[2]="BMW";<br>
+                              $cars[3]="Toyota";
+                          </li>
+                    </ul>
+                    <h2>Example</h2>
+                    <p>< html><br>
+                        < body><br>
+                        <?php<br>
+                        $cars[0]="Saab";<br>
+                        $cars[1]="Volvo";<br>
+                        $cars[2]="BMW";<br>
+                        $cars[3]="Toyota";<br>
+                        echo $cars[0] . " and " . $cars[1] . " are list of costly cars.";<br>
+                        ?><br>
+                        < /body><br>
+                        < /html>
+                        </p>
+                        <h2>The while Loop</h2>
+                        <ul>
+                            <li><b>Syntax</b></li>
+                            <li>while (condition)<br>
+                                {<br>
+                                code to be executed;<br>
+                                } 
+                              </li>
+                        </ul>
+                        <h2>Example
+                        </h2>
+                        <p>< html><br>
+                            < body><br>
+                            <?php<br>
+                            $i=1;<br>
+                            while($i<=5)<br>
+                              {<br>
+                              echo "The number is " . $i . "< br>";<br>
+                              $i++;<br>
+                              }<br>
+                            ?><br>
+                            < /body><br>
+                            < /html>
+                            
+                            </p>
+                            <h2>The do...while Statement</h2>
+                            <ul>
+                                <li><b>Syntax</b></li>
+                                <li>do<br>
+                                    {<br>
+                                    code to be executed;<br>
+                                    }<br>
+                                  while (condition);
+                                  </li>
+                            </ul>
+                            <h2>Example
+                            </h2>
+                            <p>< html><br>
+                                < body><br>
+                                
+                                <?php<br>
+                                $i=1;<br>
+                                do<br>
+                                  {<br>
+                                  $i++;<br>
+                                  echo "The number is " . $i . "< br>";<br>
+                                  }<br>
+                                while ($i<=5);<br>
+                                ?><br>
+                                
+                                < /body><br>
+                                < /html> 
+                                </p>
+                                <h2>The for Loop</h2>
+                                <ul>
+                                    <li><b>Syntax
+                                    </b>
+                                    </li>
+                                    <li>for (init; condition; increment)<br>
+                                        {<br>
+                                        code to be executed;<br>
+                                        }
+                                      </li>
+                                </ul>
+                                <h2>Example
+                                </h2>
+                                <p>< html><br>
+                                    < body><br>
+                                    
+                                    <?php<br>
+                                    for ($i=1; $i<=5; $i++)<br>
+                                      {<br>
+                                      echo "The number is " . $i . "< br>";<br>
+                                      }<br>
+                                    ?><br>
+                                    
+                                    < /body><br>
+                                    < /html>
+                                    </p>
+                                    <h2>Create a PHP Function</h2>
+                                    <ul>
+                                        <li><b>Syntax</b></li>
+                                        <li>function functionName()<br>
+                                            {<br>
+                                            code to be executed;<br>
+                                            }
+                                            </li>
+                                    </ul>
+                                    <h2>Example</h2>
+                                    <p>< html><br>
+                                        < body><br>
+                                        
+                                        <?php<br>
+                                        function writeName()<br>
+                                        {<br>
+                                        echo "Kai Jim Refsnes";<br>
+                                        }<br>
+                                        
+                                        echo "My name is ";<br>
+                                        writeName();<br>
+                                        ?><br>
+                                        
+                                        < /body><br>
+                                        < /html>
+                                        </p>
+                                        <h2>PHP Functions - Adding parameters</h2>
+                                        <p> < html><br>
+                                            < body><br>
+                                            
+                                            <?php<br>
+                                            function writeName($fname)<br>
+                                            {<br>
+                                            echo $fname . " Refsnes.< br>";<br>
+                                            }<br>
+                                            
+                                            echo "My name is ";<br>
+                                            writeName("Kai Jim");<br>
+                                            echo "My sister's name is ";<br>
+                                            writeName("Hege");<br>
+                                            echo "My brother's name is ";<br>
+                                            writeName("Stale");<br>
+                                            ?><br>
+                                            
+                                            < /body><br>
+                                            < /html>
+                                            </p>
+                                           <center><h1>My SQL
+                                        </h1></center>
+                                        <ul>
+                                            <li>MySQL is a relational database management system
+                                            </li>
+                                            <li>The database structure is organized into physical files optimized for speed.</li>
+                                            <li>The logical data model, with objects such as data tables, views, rows, and columns, offers a flexible programming environment.
+                                            </li>
+                                        </ul>
+                                        <h2>Installing XAMPP Server</h2>
+                                        <p><b>Step 1:
+                                        </b></p>
+                                        <ul>
+                                            <li>Download XAMPP server -https://www.apachefriends.org/dowmload.html.
+                                            </li>
+                                            <li>X-windows operating system.</li>
+                                            <li>A-Apache
+                                            </li>
+                                            <li>M-MySQL
+                                            </li>
+                                            <li>P-PHP</li>
+                                            <li>P-Perl</li>
+                                        </ul>
+                                        <img src="Image/xampp.jpg">
+                                        <h2>Step 2:
+                                        </h2>
+                                        <p><b>Installed automatic server start.
+                                        </b></p>
+                                        <ul>
+                                            <li>C:\xampp-install-ok
+                                            </li>
+                                            <li>C:\xampp=>xampp-control-short cut-desktop.
+                                            </li>
+                                        </ul>
+                                        <img src="Image/xampp1.jpg">
+                                        <h2>Step 3:
+                                        </h2>
+                                        <p><b>Create database.</b></p>
+                                        <ul>
+                                            <li>Google-type-localhost-click phpmyAdmin.
+                                            </li>
+                                        </ul>
+                                        <img src="Image/php.jpg">
+                                        <ul>
+                                            <li>New – click – type name(i.e., student) –create database.</li>
+                                            <li><b><u>Database:</u></b> Collection of records.
+                                            </li>
+                                        </ul>
+                                        <img src="Image/php1.jpg">
+                                        <h2>Step 4: </h2>
+                                        <p><b>Create new table</b></p>
+                                        <ul>
+                                            <li>Table name (type registration)- then no. of coloums(type any number).
+                                            </li>
+                                            <li>Now click create.</li>
+                                        </ul>
+                                        <img src="Image/php2.jpg">
+                                        <h2>Step 5:</h2>
+                                        <p><b>Structure type the tables. 
+                                        </b></p>
+                                        <ul>
+                                            <li>The type words select varchar- then length and values are any number 
+                                                selecting- index type to primary key-just go to save.</li>
+                                        </ul>
+                                        <h4>Example
+                                        </h4>
+                                        <ul>
+                                            <li>Roll.no-1
+                                            </li>
+                                            <li>Type-integer</li>
+                                            <li>Length-10
+                                            </li>
+                                            <li>Index – primary
+
+                                            </li>
+                                        </ul>
+                                        <img src="Image/php3.jpg">
+                                        <h2>Step 6:</h2>
+                                        <p><b>Value added</b></p>
+                                        <ul>
+                                            <li>Insert button also click- then type the values
+                                            </li>
+                                           <li>Then click - registration.</li>
+                                           <li>Then next value to add same process.</li>
+                                        </ul>
+                                        <img src="Image/php4.jpg">
+                                        <h2>Step 7:</h2>
+                                        <p><b>Insert option select</b></p>
+                                        <ul>
+                                            <li>Type the values – table create- given to roll no, any other details- save.</li>
+                                            <li>Automatically created to given bellow command.
+                                            </li>
+                                            <li>INSERT INTO `register` (`rollno`, `stud_name`, `stud_email`) VALUES ('101', 'Abi', 'abi@gamil.com');
+                                            </li>
+                                        </ul>
+                                        <h2>Insert the table values</h2>
+                                        <img src="Image/data.jpg">
+                                        <h2>Automatically Create Command</h2>
+                                        <img src="Image/data1.jpg">
+                                        <h2>Select- option
+                                        </h2>
+                                        <ul>
+                                            <li>Click to SQL - Click select- SELECT * FROM table name</li>
+                                            <li>click go </li>
+                                        </ul>
+                                        <img src="Image/data2.jpg">
+                                        <h2>Delete Option
+                                        </h2>
+                                        <p><b>Delete- option:</b></p>
+                                        <ul>
+                                            <li>Click to SQL - Click select- DELETE FROM table_name WHERE condition; - click go </li>
+                                        </ul>
+                                        <img src="Image/data3.jpg">
+                                        <h2>Update- option</h2>
+                                        <ul>
+                                            <li>Click to SQL - Click select-</li>
+                                            <li>UPDATE table_name<br>
+                                                SET column1 = value1, column2 = value2, ...<br>
+                                                WHERE condition;</li>
+                                                <li>click go </li>
+                                        </ul>
+                                        <h2>Update
+                                        </h2>
+                                        <img src="Image/data4.jpg">
+                                        <h2>Primary Key
+                                        </h2>
+                                        <ul>
+                                            <li>A primary key is <b>the column or columns that contain values 
+                                                that uniquely identify each row in a table. </b>
+                                            </li>
+                                            <li>A database table must have a primary key for Optim to insert, update, restore, 
+                                                or delete data from a database table.</li>
+                                                <li>Optim uses primary keys that are defined to the database.
+                                                </li>
+                                        </ul>
+                                        <h2>Easy Way to Back End Connection</h2>
+                                        <p><b>Already programmed – changes the simple way,
+                                        </b></p>
+                                        <ol>
+                                            <li><b> Database name:</b> Select and copy Data base name in sql- paste the PHP programme-
+                                                 particular data base name.
+                                            </li>
+                                            <li><b>Table name:</b> Select and copy table name in sql- 
+                                                PHP programme paste to a particular table name.
+                                            </li>
+                                            <li><b>Function values:</b> Copy values in sql server- 
+                                                PHP programme paste to a particular table values.
+                                            </li>
+                                        </ol>
+                                        
+    </body>
+</html>
