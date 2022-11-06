@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <title>Python Cheat Sheet</title>
+    </head>
+    <body>
+        <center><h1>Beginner’s Python Cheat Sheet</h1></center>
+        <h2>Phython</h2>
+        <ul>
+            <li>Python is a programming language that lets you work quickly and integrate systems more effectively.
+            </li>
+            <li>Python is a high-level, general-purpose programming language.
+            </li>
+            <li> Its design philosophy emphasizes code readability with the use of significant indentation. 
+            </li>
+            <li>Python is dynamically-typed and garbage-collected. 
+            </li>
+            <li>It supports multiple programming paradigms, including structured, object-oriented and functional programming.
+            </li>
+        </ul>
+        <h2>Variables and Strings</h2>
+        <ul>
+            <li>Variables are used to store values.
+            </li>
+            <li>A string is a series of characters, surrounded by single or double quotes.
+            </li>
+        </ul>
+        <p><b>Hello World
+        </b></p>
+        <p>Print(“Hello World!”)
+        </p>
+        <p><b>Hello World with a variable
+        </b></p>
+        <p>msg =“Hello world!”
+        </p>
+        <p>print(msg)
+        </p>
+        <p><b>Concatenation (combining strings)
+        </b></p>
+        <p>first_name=‘albert’
+        </p>
+        <p>last_name=‘einstein’
+        </p>
+        <p>full_name=first_name+ ‘ ’+ last_name print(full_name)
+        </p>
+        <h2>Lists</h2>
+        <ul>
+            <li>A list stores a series of items in a particular order.
+            </li>
+            <li>You access items using an index, or within a loop.
+            </li>
+        </ul>
+        <p><b>Make a list
+        </b></p>
+        <p>bikes=[‘trek’, ‘redline’, ‘giant’]
+        </p>
+        <p><b>Get the first item in a list
+        </b></p>
+        <p>last_bike=bike[0] 
+        </p>
+        <p><b>Get the last item in a list
+        </b></p>
+        <p>last_bike=bike[-1] </p>
+        <p><b>Looping through a list
+        </b></p>
+        <p>for bike in bikes: print(bike)</p>
+        <p><b>Adding items to a list
+        </b></p>
+        <p>bikes = []
+        </p>
+        <p>bikes.append(‘trek’)
+        </p>
+        <p>bikes.append(‘redline’)
+        </p>
+        <p>bikes.append(‘giant’)
+        </p>
+        <p><b>Making numerical lists
+        </b></p>
+        <p>squares = []
+        </p>
+        <p>for x in range(1,11):
+        </p>
+        <p>squares.append(x**2)
+        </p>
+        <h2>List (Cont.)</h2>
+        <h3>List comprehensions
+        </h3>
+        <p>squares = [x**2 for x in range(1,11)]</p>
+        <h3>Slicing a list
+        </h3>
+        <p>finishers = [‘sam’, ‘bob’, ‘ada’, ‘bea’]</p>
+        <p>	first_two = finishers[:2]
+        </p>
+        <h3>Copying a list
+        </h3>
+        <p>copy_of_bikes = bikes[:]
+        </p>
+        <h2>Tuples</h2>
+        <ul>
+            <li>Tuples are similar to lists, but the items in a tuple can’t be modified.
+            </li>
+        </ul>
+        <h3>Making a tuple
+        </h3>
+        <p>Dimensions = (1920, 1080)
+        </p>
+        <h3>If Statements</h3>
+        <ul>
+            <li>If statements are used to test for particular conditions and respond appropriately.
+            </li>
+            <li><b>Conditional tests
+            </b></li>
+        </ul>
+        <p>equals x == 42
+        </p>
+        <p>not equal x != 42 
+        </p>
+        <p>greater than x > 42
+        </p>
+        <p>or equal to x >= 42
+        </p>
+        <p>less than x < 42
+        </p>
+        <p>or equal to x <= 42
+        </p>
+        <h3>Conditional tests with lists
+        </h3>
+        <p>‘trek’ in bikes
+        </p>
+        <p>‘surly’ not in bikes</p>
+        <h3>Assigning Boolean values
+        </h3>
+        <p>game_active = True
+        </p>
+        <p>can_edit = False
+        </p>
+        <h3>A simple if test
+        </h3>
+        <p>if age >= 18
+        </p>
+        <p>print(“You can vote!”)</p>
+        <h2>White Loops</h2>
+        <ul>
+            <li>A while loop repeats  a block of code as long as a certain condition is true.
+            </li>
+        </ul>
+        <h3>A simple while loop
+        </h3>
+        <p>current_value = 1
+        </p>
+        <p>white current_value <= 5:
+        </p>
+        <p>print(current_value)
+        </p>
+        <p>current_value += 1
+        </p>
+        <h3>Letting the user choose when to quit
+        </h3>
+        <p>msg =‘’
+        </p>
+        <p>while msg !=‘quit’:
+        </p>
+        <p>msg = input(“What’s your message?”)
+        </p>
+        <p>print(msg)
+        </p>
+        <h2>Functions</h2>
+        <ul>
+            <li>Functions are named blocks of code, designed to do one specific job.
+            </li>
+            <li>Information passed to a function is called an argument, and information received by a function is called a parameter.
+            </li>
+            <li><b>A simple function
+            </b></li>
+        </ul>
+        <p>def greet_user():
+        </p>
+        <p>“””Display a simple greeting.”””
+        </p>
+        <p>print(“Hello!”)
+        </p>
+        <p>greet_user()
+        </p>
+        <ul>
+            <li><b>Passing an argument
+            </b></li>
+        </ul>
+        <p>def greet_user(username):
+        </p>
+        <p>“””Display a personalized greeting.”””</p>
+        <p>print(“Hello,” +username+ “!”)
+        </p>
+        <p> greet_user(‘jesse’)
+        </p>
+        <ul>
+            <li>Default values for parameters
+            </li>
+        </ul>
+        <p>def make_pizza(topping=‘bacon’):
+        </p>
+        <p>“””Makes a single-topping pizza.”””</p>
+        <p>print(“Have a ” +topping +”pizza!”)
+        </p>
+        <p>make_pizza()
+        </p>
+        <p>make_pizza(‘pepperoni’)
+        </p>
+        <ul>
+            <li><b>Returning a value
+            </b></li>
+        </ul>
+        <p>def add_numbers(x, y):
+        </p>
+        <p>“””Add two numbers and return the sum.”””</p>
+        <p>return x+y
+        </p>
+        <p>sum = add_numbers(3, 5)
+        </p>
+        <p>print(sum)
+        </p>
+        <ul>
+            <li><b>If-elif-else statements
+            </b></li>
+        </ul>
+        <p>if age < 4:
+        </p>
+        <p>ticket_price = 0
+        </p>
+        <p>elif age < 18:
+        </p>
+        <p>ticket_price = 10</p>
+        <p>else:
+        </p>
+        <p>ticket_price = 15
+        </p>
+        <h2>Dictionaries</h2>
+        <ul>
+            <li>Dictionaries store connections between pieces of information. 
+            </li>
+            <li>Each item in a dictionary is a key-value pair.
+            </li>
+        </ul>
+        <h3>A simple dictionary
+        </h3>
+        <p>alien = {‘color’:`green’,`points’: 5}
+        </p>
+        <h3>Accessing a value
+        </h3>
+        <p>print(“The alien’s color is ” + alien[‘color’])
+        </p>
+        <h3>Adding a new key-value pair
+        </h3>
+        <p>alien[‘x-position’] = 0
+        </p>
+        <h3>Looping through all key-value pairs
+        </h3>
+        <p>fav_numbers={‘eric’: 17, `ever’:4} for name, 
+        </p>
+        <p>number in fav_numbers.items():
+        </p>
+        <p>print(name + ‘loves’ + str(number))
+        </p>
+        <h3>Looping through all keys
+        </h3>
+        <p>fav_numbers={‘eric’: 17, `ever’:4} </p>
+        <p>for name in fav_numbers.keys():
+        </p>
+        <p>print(name + ‘loves a number’)
+        </p>
+        <h3>Looping through all the values
+        </h3>
+        <p>fav_numbers={‘eric’: 17, `ever’: 4} 
+        </p>
+        <p>for name in fav_numbers.values():</p>
+        <p>print(str(number) + ‘is a favorite’)
+        </p>
+        <h2>User Input</h2>
+        <ul>
+            <li>Your programs can prompt the user for input. All input is stored as a string.
+            </li>
+        </ul>
+        <h3>Prompting for a value
+        </h3>
+        <p>name = input(“What’s your name?”)
+        </p>
+        <p>print(“Hello, ”+ name+ “!”)
+        </p>
+        <h3>Prompting for numerical input
+        </h3>
+        <p>age = input(“How old are you? ”)
+        </p>
+        <p>age = int(age)
+        </p>
+        <p>pi = input(“What’s the value of pi?”)
+        </p>
+        <p>pi = float(pi)
+        </p>
+        <h2>Classes</h2>
+        <ul>
+            <li>A class defines the behaviour of an object and the kind of information an object can store.
+            </li>
+            <li>The information in a class is stored in attributes, and functions that belong to a class are called methods.
+            </li>
+            <li> A child class inherits the attributes and methods from its parent class.
+            </li>
+        </ul>
+        <h3>Creating a dog class
+        </h3>
+        <p>class Dog():
+        </p>
+        <p>“””Represent a dog.”””
+        </p>
+        <p>def_init_(self, name):
+        </p>
+        <p>“””Initialize dog object.”””
+        </p>
+        <p>self.name = name
+        </p>
+        <p>def sit(self):
+        </p>
+        <p>“””Simulate sitting.”””
+        </p>
+        <p>print(self.name + “is sitting.”)
+        </p>
+        <p>my_dog = Dog(‘Peso’)
+        </p>
+        <p>print(my_dog.name+ “is a great dog!”)
+        </p>
+        <p>my_dog.sit()
+        </p>
+        <h3>Inheritance
+        </h3>
+        <p>class SARDog(Dog):
+        </p>
+        <p>“””Represent a search dog.”””
+        </p>
+        <p>def_init_(self, name):
+        </p>
+        <p>“””Initialize the sardog.”””
+        </p>
+        <p>super()_init_(name)
+        </p>
+        <p>def search(self):
+        </p>
+        <p>“””Simulate searching.”””
+        </p>
+        <p>print(self.name + “is searching.”)
+        </p>
+        <p>my_dog = SARDog(‘Willie’)
+        </p>
+        <p>Print(my_dog.name + “is a search dog.”)</p>
+        <p>my_dog.sit()
+        </p>
+        <p>my_dog.search()
+        </p>
+        <h2>Infinite Skills</h2>
+        <ul>
+            <li>If you had infinite programming skills, what would you build?
+            </li>
+            <li>As you’re learning to program, it’s helpful to think about the real-world projects you’d like to create.
+            </li>
+            <li>It’s a good habit to keep an “ideas” notebook that you can refer to whenever you want to start a new project.
+            </li>
+            <li>If you haven’t done so already, take a few minutes and describe three project you’d like to create.
+            </li>
+        </ul>
+        <h2>Working with files</h2>
+        <ul>
+            <li>Your program can read from files and write to files.
+            </li>
+            <li>Files are opened in real mode (‘r’) by default, but can also be opened in write mode (‘w’) and append mode (‘a’).
+            </li>
+        </ul>
+        <h3>Reading a file and storing its lines
+        </h3>
+        <p>filename = ‘Siddhartha.txt’
+        </p>
+        <p>with open(filename) as file_object:
+        </p>
+        <p>“lines = file_object.readlines()
+        </p>
+        <p>for line in lines:
+        </p>
+        <p>print(line)
+        </p>
+        <h3>Writing to a file
+        </h3>
+        <p>filename = ‘journal.txt’
+        </p>
+        <p>with open(filename, ‘w’) as file_object:
+        </p>
+        <p>file_object.write(“I love programming.”)
+        </p>
+        <h3>Appending to a file
+        </h3>
+        <p>filename = ‘journal.txt’
+        </p>
+        <p>	with open(filename, ‘a’) as file_object:
+        </p>
+        <p>file_object.write(“\nI love making games.”)
+        </p>
+        <h2>Exceptions</h2>
+        <ul>
+            <li>Exception help you respond appropriately to errors that are likely to occur.
+            </li>
+            <li>You place code that might cause an error in the try block.
+            </li>
+            <li>Code that should run in response to an error goes in the except block.
+            </li>
+            <li>Code that should run only if the try block was successful goes in the else block.
+            </li>
+        </ul>
+        <h2>Working with files</h2>
+        <h3>Catching an exception
+        </h3>
+        <p>prompt = “How many tickets do you need?”</p>
+        <p>num_tickets = input(prompt)
+        </p>
+        <p>try:
+        </p>
+        <p>num_tickets = int(num_tickets)
+        </p>
+        <p>except ValueError:
+        </p>
+        <p>print(“Please try again.”)
+        </p>
+        <p>else:
+        </p>
+        <p>print(“Your tickets are printing.”)	
+        </p>
+        <h2>Zen of Python</h2>
+        <ul>
+            <li>Simple is better than complex.
+            </li>
+            <li>If you have a choice between a simple and a complex solution, and both work, use the simple solution.
+            </li>
+            <li>Your code will be easier to maintain, and it will be easier for you and others to build on that code later on
+            </li>
+        </ul>
+    </body>
+</html>
